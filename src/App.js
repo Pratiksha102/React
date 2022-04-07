@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
+
+let name="Pratiksha"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <nav>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </nav>
+    <h1>Hello {name}</h1>
+    <div className="container">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem iure explicabo tenetur? Harum distinctio et qui earum deserunt quibusdam, aperiam aut perspiciatis repudiandae maiores minus laudantium ab necessitatibus incidunt repellendus?
     </div>
+    <Navbar title="Pratiksha"></Navbar>
+    </>
   );
 }
 

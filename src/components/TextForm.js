@@ -5,13 +5,15 @@ export default function TextForm(props) {
     const handleOnClick=()=>{
         
         console.log("on click function is clicked");
+        console.log(text);
         let newText=text.toUpperCase();
         setText(newText);
 
     }
 
     const handleOnChange=(event)=>{
-
+        console.log("on change function is called");
+        console.log(event);
         setText(event.target.value);
 
 
